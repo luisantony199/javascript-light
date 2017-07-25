@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Title of the document</title>
+<meta charset="UTF-8">
+<style media="screen">
+h2{
+  color:red;
+  font-size: 200%;
+}
+</style>
+</head>
+
+<body>
+  <h2>this is my mansion <br>It is very big</h2>
+  <button type="button" name="button" onclick="lighton()">light on</button>
+  <img id="lightbulb"src="img/pic_bulboff.gif" alt="light bulb off" width="50px">
+  <button type="button" name="button" onclick="lightoff()">light off</button>
+  <script type="text/javascript">
+    function lighton(){
+      document.getElementById('lightbulb').src='img/pic_bulbon.gif';
+      document.getElementsByTagName("body")[0].style.backgroundColor="white";
+    }
+    function lightoff(){
+      document.getElementById('lightbulb').src='img/pic_bulboff.gif';
+      document.getElementsByTagName("BODY")[0].style.backgroundColor= "black" ;
+    }
+  </script>
+</body>
+
+</html>
